@@ -1,15 +1,17 @@
-function App() {
+import Header from './components/Header';
+
+const App: React.FC = () => {
 	return (
 		<>
-			<header className='header'>
-				<div className='container'>bgbfbgbgf</div>
-			</header>
+			<Header />
 
-			<main className='main'></main>
+			<main className='main'>
+				<section className='hero'></section>
+			</main>
 
 			<footer className='footer'></footer>
 		</>
 	);
-}
+};
 
 export default App;
