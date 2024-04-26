@@ -3,18 +3,17 @@
 :root {
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
+	font-size: 18px;
 	font-weight: 400;
+	color: #676767;
 
-	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
-	background-color: #242424;
-
-	font-synthesis: none;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	--text-color: #676767;
+	--header-text-color: #606060;
+	--header-nav-hover: #6c5fbc;
 }
 
 .container {
-	margin: 0 96px;
+	max-width: 1248px;
+	margin: 0 auto;
+	padding: 0 15px;
 }
