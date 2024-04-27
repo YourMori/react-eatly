@@ -1,0 +1,97 @@
+.mobile {
+	&__container {
+		max-width: 1218px;
+		margin: 0 auto;
+		padding: 100px 15px 120px;
+		border-bottom: 2px solid var(--block-lines-color);
+
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	&__content {
+		flex: 0 1 44%;
+	}
+
+	&__title {
+		font-family: 'Poppins';
+		font-weight: 700;
+		font-size: 52px;
+		line-height: 58px;
+		color: var(--text-title-color);
+		margin-bottom: 63px;
+
+		span {
+			color: var(--text-bright-color);
+		}
+	}
+
+	&__list {
+		font-weight: 400;
+		font-size: 21px;
+		line-height: 30px;
+		margin-bottom: 61px;
+
+		li {
+			margin-bottom: 28px;
+		}
+	}
+
+	&__button {
+		position: relative;
+		font-family: Poppins;
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 22px;
+		padding: 20px 26px;
+
+		border-radius: 16px;
+		border: 1px solid var(--text-bright-color);
+		background-color: var(--text-bright-color);
+		color: #fff;
+		transition: all 0.3s linear;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #fff;
+			border: 1px solid var(--text-bright-color);
+			color: var(--text-bright-color);
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 75%;
+			right: -90%;
+			height: 100%;
+			width: 100%;
+
+			background: url(../../assets/mobile/effect_2.svg);
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.mobile {
+		&__container {
+			display: block;
+			margin: auto;
+		}
+
+		&__button {
+			position: relative;
+			font-family: Poppins;
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 22px;
+			padding: 20px 26px;
+			border: 0px;
+			border-radius: 16px;
+			background-color: var(--text-bright-color);
+			color: #fff;
+
+			justify-content: center;
+		}
+	}
+}

@@ -1,13 +1,11 @@
 import Header from './components/Header';
+import Home from './pages/Home';
 
 const App: React.FC = () => {
 	return (
 		<>
 			<Header />
-
-			<main className='main'>
-				<section className='hero'></section>
-			</main>
+			<Home />
 
 			<footer className='footer'></footer>
 		</>

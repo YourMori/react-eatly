@@ -1,0 +1,125 @@
+.restaurants {
+	&__container {
+		max-width: 1248px;
+		margin: 0 auto;
+		padding: 100px 15px 120px;
+		border-bottom: 2px solid var(--block-lines-color);
+	}
+
+	&__title {
+		font-family: Poppins;
+		font-size: 45px;
+		font-weight: 600;
+		color: var(--text-title-color);
+		text-align: center;
+
+		margin-bottom: 86px;
+
+		span {
+			color: var(--text-bright-color);
+		}
+	}
+
+	&__inner {
+		font-family: Poppins;
+		font-size: 20px;
+		font-weight: 400;
+
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 40px 30px;
+		margin-bottom: 65px;
+
+		&__img {
+			position: relative;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		&__info {
+			margin: 11px 17px 18px 34px;
+
+			&_tag {
+				font-size: 13px;
+				color: #fb461d;
+				background-color: #f7c5ba;
+
+				max-width: fit-content;
+				border-radius: 5px;
+				padding: 3px 6px;
+				margin-bottom: 5px;
+			}
+
+			&_name {
+				font-weight: 600;
+				font-size: 26px;
+				margin-bottom: 5px;
+			}
+
+			&_bottom {
+				display: flex;
+				font-size: 20px;
+
+				justify-content: space-between;
+				align-items: center;
+
+				&_dur {
+					margin-right: 3%;
+				}
+
+				&_rating {
+					position: relative;
+					flex: 1 1 auto;
+
+					&::before {
+						content: '';
+						position: absolute;
+						height: 30px;
+						width: 30px;
+						top: 20%;
+						right: 100%;
+						background: url(../../assets/star.svg) top center no-repeat;
+					}
+				}
+
+				button {
+					width: 40px;
+					height: 40px;
+					border: 0px;
+					color: rgba(108, 95, 188, 1);
+					background-color: #dbd9ee;
+					padding: 8px 0px;
+					border-radius: 100%;
+				}
+			}
+		}
+	}
+
+	&__item {
+		border-radius: 30px;
+		overflow: hidden;
+		background-color: #ffffff;
+		border: 1.5px solid #f4f4f6;
+		box-shadow: 6px 71px 36px rgba(229, 229, 229, 0.7);
+		transition: transform 0.3s ease;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+
+	&__button {
+		text-align: right;
+
+		a {
+			font-family: Poppins;
+			font-weight: 500;
+			font-size: 20px;
+			letter-spacing: -0.1px;
+			color: #acadb9;
+			cursor: pointer;
+		}
+	}
+}
