@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import Features from '../components/Features';
 import Mobile from '../components/Mobile';
 import Restaurants from '../components/Restaurants';
+import Dishes from '../components/Dishes';
 
 const Home = () => {
 	return (
@@ -12,6 +13,7 @@ const Home = () => {
 			<Features />
 			<Mobile />
 			<Restaurants />
+			<Dishes />
 			<h1>vbfbdbg</h1>
 			<h1>vbfbdbg</h1>
 			<h1>vbfbdbg</h1>
