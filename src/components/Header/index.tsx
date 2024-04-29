@@ -1,6 +1,11 @@
 import styles from './Header.module.scss';
 
-const Header: React.FC = () => {
+interface ModalProps {
+	setLoginActive: React.Dispatch<React.SetStateAction<boolean>>;
+	setSignupActive: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Header: React.FC<ModalProps> = ({ setLoginActive, setSignupActive }) => {
 	return (
 		<header className={styles.header}>
 			<div className={styles.header__container}>
@@ -33,8 +38,12 @@ const Header: React.FC = () => {
 						</ul>
 					</nav>
 					<div className={styles.header__button}>
-						<button className={styles.header__button_login}>Login</button>
-						<button className={styles.header__button_signup}>Sign up</button>
+						<button className={styles.header__button_login} onClick={() => setLoginActive(true)}>
+							Login
+						</button>
+						<button className={styles.header__button_signup} onClick={() => setSignupActive(true)}>
+							Sign up
+						</button>
 					</div>
 				</div>
 			</div>
