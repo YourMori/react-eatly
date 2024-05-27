@@ -6,7 +6,7 @@
 	width: 100vw;
 	height: 100vh;
 	background-color: rgba(0, 0, 0, 0.8);
-	transition: opacity 0.3s ease, visibility 0.3s linear;
+
 	overflow-y: scroll;
 
 	transform: translateY(-100%);
@@ -22,6 +22,7 @@
 		height: 100vh;
 		background-color: rgba(0, 0, 0, 0.8);
 
+		transition: opacity 0.3s ease, visibility 0.3s linear;
 		overflow-y: scroll;
 
 		transform: translateY(0);

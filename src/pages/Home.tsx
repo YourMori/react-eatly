@@ -14,7 +14,6 @@ const Home = () => {
 			<Mobile />
 			<Restaurants />
 			<Dishes />
-			<h1>В разработке 2 секции {'=>'}</h1>
 		</main>
 	);
 };
